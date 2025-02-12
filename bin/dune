@@ -1,0 +1,4 @@
+(executable
+ (public_name chatroom)
+ (name main)
+ (libraries chatroom))
