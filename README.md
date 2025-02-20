@@ -26,7 +26,7 @@ Start the client -
 Without flags (`host`=127.0.0.1 `port`=12345) - 
 `dune exec chatroom -- -c`
 
-How to send messages -
+### How to send messages -
 After starting the applicaiton in both client and server mode in different terminal sessions. Type your message out.
 Once done, send the message by typing '/send' on a newline and clicking `Enter`.
 
