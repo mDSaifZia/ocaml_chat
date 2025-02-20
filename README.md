@@ -6,25 +6,39 @@
     
 ## Usage
 [Highly Recommended] create a switch after cloning and entering the project dir - 
-```opam switch create . 5.3.0```
+```
+opam switch create . 5.3.0
+```
 
 Install the necessary dependencies - 
-```opam install . --deps-only```
+```
+opam install . --deps-only
+```
 
 Build project - 
-```dune clean && dune build```
+```
+dune clean && dune build
+```
 
 Start the server -
-```dune exec chatroom -- -s --port <port>```
+```
+dune exec chatroom -- -s --port <port>
+```
 
 Without flags (server listens at port `12345`) -
-```dune exec chatroom -- -s```
+```
+dune exec chatroom -- -s
+```
 
 Start the client - 
-```dune exec chatroom -- -c --host <hostname/ip> --port <port>```
+```
+dune exec chatroom -- -c --host <hostname/ip> --port <port>
+```
 
 Without flags (`host`=127.0.0.1 `port`=12345) - 
-```dune exec chatroom -- -c```
+```
+dune exec chatroom -- -c
+```
 
 ### How to send messages -
 After starting the applicaiton in both client and server mode in different terminal sessions. Type your message out.
