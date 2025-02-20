@@ -28,8 +28,11 @@ Without flags (`host`=127.0.0.1 `port`=12345) -
 
 ### How to send messages -
 After starting the applicaiton in both client and server mode in different terminal sessions. Type your message out.
-Once done, send the message by typing '/send' on a newline and clicking `Enter`.
-
+Once done, send the message by typing '/send' on a newline and clicking `Enter`. Example:-
+```
+Hi this is a message example
+/send
+```
 ## Specsheet
 ### One on One chat
 1. Server can establish connections with multiple clients but only one client can send and receive messages to/from the server.
