@@ -1,4 +1,5 @@
 (executable
  (public_name chatroom)
  (name main)
- (libraries chatroom))
+ (libraries chatroom lwt lwt.unix)
+ (preprocess (pps lwt_ppx)))

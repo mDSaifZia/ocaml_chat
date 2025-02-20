@@ -7,9 +7,9 @@
 (source
  (github username/reponame))
 
-(authors "Author Name <author@example.com>")
+(authors "Mohammad Saif Zia")
 
-(maintainers "Maintainer Name <maintainer@example.com>")
+(maintainers "Mohammad Saif Zia saifzia.work@gmail.com")
 
 (license LICENSE)
 
@@ -17,11 +17,10 @@
 
 (package
  (name chatroom)
- (synopsis "A short synopsis")
- (description "A longer description")
- (depends ocaml
-          dune)
+ (synopsis "Simple one on one chat application")
+ (description "A one on one chat system between a server and client communicating via TCP sockets")
+ (depends ocaml dune lwt lwt_ppx)
  (tags
-  ("add topics" "to describe" your project)))
+  ("tcp" "chatroom" "ocaml")))
 
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/reference/dune-project/index.html

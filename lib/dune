@@ -1,2 +1,5 @@
 (library
- (name chatroom))
+ (name chatroom)
+ (libraries lwt lwt.unix)
+ (modules wireprotocol input server client)
+ (preprocess (pps lwt_ppx)))
