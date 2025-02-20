@@ -48,7 +48,7 @@ Hi this is a message example
 /send
 ```
 
-## Application Structure
+## Application File Structure
 ### lib/ 
 1. wireprotocol.mli - msg_type variants, message sending and reading function definitions
 2. wireprotocol.ml - message and acknowledgement sending (encoding), reading (decoding) and handling
