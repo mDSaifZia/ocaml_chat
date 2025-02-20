@@ -3,13 +3,13 @@ opam-version: "2.0"
 synopsis: "Simple one on one chat application"
 description:
   "A one on one chat system between a server and client communicating via TCP sockets"
-maintainer: ["Mohammad Saif Zia saifzia.work@gmail.com"]
+maintainer: ["Mohammad Saif Zia - saifzia.work@gmail.com"]
 authors: ["Mohammad Saif Zia"]
 license: "LICENSE"
 tags: ["tcp" "chatroom" "ocaml"]
-homepage: "https://github.com/username/reponame"
-doc: "https://url/to/documentation"
-bug-reports: "https://github.com/username/reponame/issues"
+homepage: "https://github.com/mDSaifZia/ocaml_chat"
+doc: "https://github.com/mDSaifZia/ocaml_chat"
+bug-reports: "https://github.com/mDSaifZia/ocaml_chat/issues"
 depends: [
   "ocaml"
   "dune" {>= "3.17"}
@@ -31,4 +31,4 @@ build: [
     "@doc" {with-doc}
   ]
 ]
-dev-repo: "git+https://github.com/username/reponame.git"
+dev-repo: "git+https://github.com/mDSaifZia/ocaml_chat.git"

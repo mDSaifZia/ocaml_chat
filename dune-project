@@ -5,15 +5,15 @@
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+  (github mDSaifZia/ocaml_chat))
 
 (authors "Mohammad Saif Zia")
 
-(maintainers "Mohammad Saif Zia saifzia.work@gmail.com")
+(maintainers "Mohammad Saif Zia - saifzia.work@gmail.com")
 
 (license LICENSE)
 
-(documentation https://url/to/documentation)
+(documentation https://github.com/mDSaifZia/ocaml_chat)
 
 (package
  (name chatroom)
