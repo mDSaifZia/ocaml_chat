@@ -33,6 +33,17 @@ Once done, send the message by typing '/send' on a newline and clicking `Enter`.
 Hi this is a message example
 /send
 ```
+
+## Application Structure
+### lib/ 
+1. wireprotocol.mli - msg_type variants, message sending and reading function definitions
+2. wireprotocol.ml - message and acknowledgement sending (encoding), reading (decoding) and handling
+3. input.ml - stdin user input handling
+4. server.ml - TCP start server and communication loop
+5. client.ml - TCP client loop function
+### bin/
+1. main.ml - entrypoint of the application
+
 ## Specsheet
 ### One on One chat
 1. Server can establish connections with multiple clients but only one client can send and receive messages to/from the server.
@@ -40,4 +51,7 @@ Hi this is a message example
 2. Every message type (data or acknowledgement) has header bytes.
    A message has 9 byte header (1 byte for msg_type, 4 bytes for seq ID, 4 bytes for content length).
    An acknowledgement has 5 byte header (1 byte for msg_type, 4 byte for seq ID of message being acknowledged).
-3. RTT for each message is displayed.
+3. When a message is sent, it is first inserted into a hashtable which takes the seqID of the message as key and timestamp as value.
+   When the acknowledgement of that message is received that seqID is removed from the hashtable and the timestamp difference is used
+   to calculate the RTT.
+
